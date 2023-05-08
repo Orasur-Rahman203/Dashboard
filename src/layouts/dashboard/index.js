@@ -49,10 +49,10 @@ function Dashboard() {
                 color="dark"
                 icon="weekend"
                 title="Bookings"
-                count={281}
+                count={0}
                 percentage={{
                   color: "success",
-                  amount: "+55%",
+                  amount: "0%",
                   label: "than lask week",
                 }}
               />
@@ -63,10 +63,10 @@ function Dashboard() {
               <ComplexStatisticsCard
                 icon="leaderboard"
                 title="Today's Users"
-                count="2,300"
+                count={0}
                 percentage={{
                   color: "success",
-                  amount: "+3%",
+                  amount: "0%",
                   label: "than last month",
                 }}
               />
@@ -78,10 +78,10 @@ function Dashboard() {
                 color="success"
                 icon="store"
                 title="Revenue"
-                count="34k"
+                count="0"
                 percentage={{
                   color: "success",
-                  amount: "+1%",
+                  amount: "0%",
                   label: "than yesterday",
                 }}
               />
@@ -93,11 +93,11 @@ function Dashboard() {
                 color="primary"
                 icon="person_add"
                 title="Followers"
-                count="+91"
+                count="0"
                 percentage={{
                   color: "success",
-                  amount: "",
-                  label: "Just updated",
+                  amount: "0%",
+                  label: "Today",
                 }}
               />
             </MDBox>
