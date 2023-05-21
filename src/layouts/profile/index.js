@@ -15,39 +15,39 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
+// import Divider from "@mui/material/Divider";
 import * as React from "react";
 
 // @mui icons
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import InstagramIcon from "@mui/icons-material/Instagram";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 // import MDTypography from "components/MDTypography";
 // eslint-disable-next-line import/no-unresolved
 // import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 // import Popover from "@mui/material/Popover";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
+// import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
 // import ProfilesList from "examples/Lists/ProfilesList";
 // import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
 
 // Overview page components
 import Header from "layouts/profile/components/Header";
-import PlatformSettings from "layouts/profile/components/PlatformSettings";
+// import PlatformSettings from "layouts/profile/components/PlatformSettings";
 
 // Data
 // import profilesListData from "layouts/profile/data/profilesListData";
-import { Button } from "@mui/material";
-import Modal from "@mui/material/Modal";
+// import { Button } from "@mui/material";
+// import Modal from "@mui/material/Modal";
 // import { Button } from "@mui/material";
 
 // Images
@@ -59,21 +59,21 @@ import Modal from "@mui/material/Modal";
 // import team2 from "assets/images/team-2.jpg";
 // import team3 from "assets/images/team-3.jpg";
 // import team4 from "assets/images/team-4.jpg";
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
-};
+// const style = {
+//   position: "absolute",
+//   top: "50%",
+//   left: "50%",
+//   transform: "translate(-50%, -50%)",
+//   width: 400,
+//   bgcolor: "background.paper",
+//   border: "2px solid #000",
+//   boxShadow: 24,
+//   p: 4,
+// };
 function Overview() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  // const [open, setOpen] = React.useState(false);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -81,10 +81,10 @@ function Overview() {
       <Header>
         <MDBox mt={5} mb={3}>
           <Grid container spacing={1}>
-            <Grid item xs={12} md={6}>
+            {/* <Grid item xs={12} md={6}>
               <PlatformSettings />
-            </Grid>
-            <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+            </Grid> */}
+            {/* <Grid item xs={12} md={6} sx={{ display: "flex" }}>
               <Divider orientation="vertical" sx={{ ml: -2, mr: 1 }} />
               <ProfileInfoCard
                 title="profile information"
@@ -116,7 +116,7 @@ function Overview() {
                 shadow={false}
               />
               <Divider orientation="vertical" sx={{ mx: 0 }} />
-            </Grid>
+            </Grid> */}
             {/* <Grid item xs={12} xl={4}>
               <ProfilesList title="conversations" profiles={profilesListData} shadow={false} />
             </Grid> */}
@@ -218,24 +218,40 @@ function Overview() {
             {/* <Button variant="outlined" sx={{ marginX: 4, color: "green" }}>
               Update your profile
             </Button> */}
-            <Button sx={{ margin: 3 }} onClick={handleOpen} variant="contained">
+            {/* <Button sx={{ margin: 3 }} onClick={handleOpen} variant="contained">
               Update Your Profile
-            </Button>
-            <Modal
+            </Button> */}
+            {/* <Modal
               open={open}
               onClose={handleClose}
               aria-labelledby="modal-modal-title"
               aria-describedby="modal-modal-description"
             >
-              <Box sx={style}>
-                <Typography id="modal-modal-title" variant="h6" component="h2">
-                  Text in a modal
-                </Typography>
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
+              <Box sx={{ ...style, width: "50%" }}>
+                <TextField
+                  sx={{ margin: 2, width: "60%" }}
+                  id="outlined-disabled"
+                  label="Name"
+                  type="text"
+                />
+                <TextField
+                  sx={{ margin: 2, width: "60%" }}
+                  id="outlined-disabled"
+                  label="Email"
+                  type="text"
+                />
+                <TextField
+                  sx={{ margin: 2, width: "60%" }}
+                  id="outlined-helperText"
+                  label="Image"
+                  // defaultValue="Default Value"
+                  // helperText="Some important text"
+                />
+                <Button variant="contained" sx={{ margin: 2, width: "60%" }} onClick={handleClose}>
+                  Send
+                </Button>
               </Box>
-            </Modal>
+            </Modal> */}
           </Grid>
         </MDBox>
       </Header>

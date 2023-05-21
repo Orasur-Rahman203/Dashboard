@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -59,7 +44,7 @@ function Footer({ light }) {
             by
             <Link href="https://www.creative-tim.com/" target="_blank">
               <MDTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
-                &nbsp;Creative Tim&nbsp;
+                &nbsp;Tech Analytica Limited&nbsp;
               </MDTypography>
             </Link>
             for a better web.
@@ -82,18 +67,18 @@ function Footer({ light }) {
             })}
           >
             <MDBox component="li" pr={2} lineHeight={1}>
-              <Link href="https://www.creative-tim.com/" target="_blank">
+              <Link href="https://www.techanalyticaltd.com/" target="_blank">
                 <MDTypography
                   variant="button"
                   fontWeight="regular"
                   color={light ? "white" : "dark"}
                 >
-                  Creative Tim
+                  Tech Analytica Limited
                 </MDTypography>
               </Link>
             </MDBox>
             <MDBox component="li" px={2} lineHeight={1}>
-              <Link href="https://www.creative-tim.com/presentation" target="_blank">
+              <Link href=" #">
                 <MDTypography
                   variant="button"
                   fontWeight="regular"
@@ -104,7 +89,7 @@ function Footer({ light }) {
               </Link>
             </MDBox>
             <MDBox component="li" px={2} lineHeight={1}>
-              <Link href="https://www.creative-tim.com/blog" target="_blank">
+              <Link href=" #">
                 <MDTypography
                   variant="button"
                   fontWeight="regular"
@@ -115,7 +100,7 @@ function Footer({ light }) {
               </Link>
             </MDBox>
             <MDBox component="li" pl={2} lineHeight={1}>
-              <Link href="https://www.creative-tim.com/license" target="_blank">
+              <Link href=" #">
                 <MDTypography
                   variant="button"
                   fontWeight="regular"

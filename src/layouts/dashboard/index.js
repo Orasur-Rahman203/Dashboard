@@ -123,7 +123,7 @@ function Dashboard() {
                   title="daily sales"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>+0%</strong>) increase in today sales.
                     </>
                   }
                   date="updated 4 min ago"

@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -37,10 +22,10 @@ function MasterCard({ color, number, holder, expires }) {
     );
   }
 
-  const num1 = numbers.slice(0, 4).join("");
-  const num2 = numbers.slice(4, 8).join("");
-  const num3 = numbers.slice(8, 12).join("");
-  const num4 = numbers.slice(12, 16).join("");
+  const num1 = "0123";
+  const num2 = "xxxx";
+  const num3 = "xxxx";
+  const num4 = numbers.slice(6, 10).join("");
 
   return (
     <Card

@@ -44,9 +44,14 @@ import Checkbox from "@mui/material/Checkbox";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Basic() {
+  const [phone, setPhone] = useState(0);
+  const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
+  const handleSignIn = () => {
+    console.log("phone ----- password ----", phone, password);
+  };
 
   return (
     <BasicLayout image={bgImage}>
@@ -86,10 +91,20 @@ function Basic() {
         <MDBox pt={4} pb={3} px={3}>
           <MDBox component="form" role="form">
             <MDBox mb={2}>
-              <MDInput type="email" label="Email" fullWidth />
+              <MDInput
+                type="number"
+                label="Phone Number"
+                fullWidth
+                onChange={(e) => setPhone(e.target.value)}
+              />
             </MDBox>
             <MDBox mb={2}>
-              <MDInput type="password" label="Password" fullWidth />
+              <MDInput
+                type="password"
+                label="Password"
+                fullWidth
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </MDBox>
             <MDBox display="flex" alignItems="center" ml={-1}>
               {/* <Switch checked={rememberMe} onChange={handleSetRememberMe} /> */}
@@ -105,7 +120,7 @@ function Basic() {
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
-              <MDButton variant="gradient" color="info" fullWidth>
+              <MDButton variant="gradient" color="info" fullWidth onClick={handleSignIn}>
                 sign in
               </MDButton>
             </MDBox>
